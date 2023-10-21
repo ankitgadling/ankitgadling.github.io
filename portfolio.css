@@ -1,0 +1,129 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #007bff; /* Define a variable called --main-color and set its value to #007bff (blue color) */
+    --font-color:#fff;
+    --font-size: 16px;     /* Define a variable for font size */
+    --border-radius: 4px;  /* Define a variable for border radius */
+  }
+/* icons styles */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.material-symbols-outlined{
+    font-size: 50px;
+    transition: all 0.5s;
+}
+
+@keyframes iconHover {
+    0% {
+      transform: scale(1); /* Initial scale (no change) */
+      color: black; /* Initial color */
+    }
+    100% {
+      transform: scale(1.1); /* Scale to 120% size on hover */
+      color: black; /* Change to a different color on hover */
+    }
+  }
+
+  /* Apply the hover animation on hover */
+.material-symbols-outlined:hover {
+    animation: iconHover 0.5s; /* Use the iconHover keyframes animation with a 0.3s duration */
+    animation-fill-mode: forwards;
+}
+
+
+/* Apply the background color and white text color */
+body {
+    background-color: var(--main-color);
+    color: var(--font-color);
+    font-family: Arial, sans-serif;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    background-color:black;
+    position: absolute;
+    left: -100%;
+}
+.navigation{
+    /* background-color: black; */
+    position: absolute;
+    top: 3%;
+    right: 4%;
+    z-index: 1;
+}
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style the navigation list items */
+.navigation li {
+    color: white;
+    margin: 50px 0;
+    cursor: pointer;
+    font-size: 26px;
+    /* border: 1px solid black; */
+
+}
+
+/* Add other styles as needed */
+/* homepage styles */
+#home,#projects,#about,#contact{
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#home{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#home h1 {
+    font-size: 3rem;
+}
+
+#home p {
+    font-size: 1.5rem;
+}
+/* projects styles */
+.title{        
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+    font-size: 2.5rem;
+}
+
+.project {
+    margin: 0 10%;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.project h2 {
+    font-size: 1.5rem;
+}
+
+.project p {
+    font-size: 1rem;
+}

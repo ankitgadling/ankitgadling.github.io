@@ -1,51 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Dark Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Ankit Gadling</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="portfolio.css">
 </head>
+
 <body>
     <header>
-        <nav>
+        <div class="navigation">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li data-id="home"="">
+                    <span class="material-symbols-outlined">
+                        home
+                    </span>
+                </li>
+                <li data-id="projects"="">
+                    <span class="material-symbols-outlined">
+                        code
+                    </span>
+                </li>
+                <li data-id="about"="">
+                    <span class="material-symbols-outlined">
+                        school
+                    </span>
+                </li>
+                <li data-id="contact"="">
+                    <span class="material-symbols-outlined">
+                        contact_page
+                    </span>
+                </li>
             </ul>
-        </nav>
+        </div>
     </header>
-
-    <section id="about">
-        <div class="container">
-            <h1>About Me</h1>
-            <p>Your introduction goes here.</p>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <div class="portfolio-item">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
+    <main>
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover my work and achievements.</p>
+        </section>
+        <section id="projects">
+            <div class="title">
+                <h1>My Projects</h1>
             </div>
-            <div class="portfolio-item">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
+            <div class="project">
+                <h2>Project 1</h2>
+                <p>A brief description of project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="project1.html">Learn More</a>
             </div>
-            <!-- Add more portfolio items as needed -->
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Contact information and a contact form go here.</p>
-        </div>
-    </section>
+        
+            <div class="project">
+                <h2>Project 2</h2>
+                <p>A brief description of project 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="project2.html">Learn More</a>
+            </div>
+        
+            <div class="project">
+                <h2>Project 3</h2>
+                <p>A brief description of project 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                <a href="project3.html">Learn More</a>
+            </div>
+        </section>
+        <section id="about">About</section>
+        <section id="contact">Contact</section>
+    </main>
 </body>
+<script src="navigation.js"></script>
+
 </html>
