@@ -1,0 +1,58 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply the dark background and white text color */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Style the main content container */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the sections */
+section {
+    padding: 40px 0;
+}
+
+/* Style the portfolio items */
+.portfolio-item {
+    margin: 20px 0;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+}
+
+/* Add more styles and customize further as needed */
