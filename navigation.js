@@ -2,7 +2,6 @@ function setupPage() {
     // Your code here to run when the page loads
     console.log('Page is loaded!');
     section=document.getElementById("home")
-    section.style.backgroundColor = 'lightgreen';
     section.style.left = '0';
 }
 
@@ -19,7 +18,6 @@ elements.forEach(function(element) {
         sections=document.querySelectorAll('section')
         sections.forEach(function(section){
             if(section.id==Id){
-                 section.style.backgroundColor = 'lightgreen';
                  section.style.left = '0';
             }
             else{
