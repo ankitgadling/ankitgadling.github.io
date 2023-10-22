@@ -2,6 +2,7 @@
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 :root {
@@ -9,7 +10,8 @@ body, h1, h2, h3, p {
     --font-color:#fff;
     --font-size: 16px;     /* Define a variable for font size */
     --border-radius: 4px;  /* Define a variable for border radius */
-  }
+    --border-color:#fff;
+}
 /* icons styles */
 .material-symbols-outlined {
   font-variation-settings:
@@ -20,18 +22,22 @@ body, h1, h2, h3, p {
 }
 
 .material-symbols-outlined{
-    font-size: 50px;
+    font-size: 35px;
     transition: all 0.5s;
+    /* border: 1px solid black; */
+    background-color: rgb(136, 0, 255);
+    border-radius: 50%;
+    padding: 20%;
 }
 
 @keyframes iconHover {
     0% {
       transform: scale(1); /* Initial scale (no change) */
-      color: black; /* Initial color */
+      /* color: black; Initial color */
     }
     100% {
       transform: scale(1.1); /* Scale to 120% size on hover */
-      color: black; /* Change to a different color on hover */
+      /* color: black; Change to a different color on hover */
     }
   }
 
@@ -42,21 +48,16 @@ body, h1, h2, h3, p {
 }
 
 
-/* Apply the background color and white text color */
-body {
-    background-color: var(--main-color);
-    color: var(--font-color);
-    font-family: Arial, sans-serif;
-}
 section{
     height: 100vh;
     width: 100%;
-    background-color:black;
     position: absolute;
     left: -100%;
+    background: linear-gradient(135deg, #3494E6, #EC6EAD);
 }
+
+/* navigation sytles */
 .navigation{
-    /* background-color: black; */
     position: absolute;
     top: 3%;
     right: 4%;
@@ -65,6 +66,7 @@ section{
 .navigation ul {
     list-style-type: none;
     padding: 0;
+    
 }
 
 /* Style the navigation list items */
@@ -76,21 +78,30 @@ section{
     /* border: 1px solid black; */
 
 }
+/* media queries for navigation */
+@media (max-width: 768px) {
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    .navigation{
+        top: unset;
+        right: unset;
+        bottom: 0;
+    }
+    .navigation ul{
+        display: flex;
+    }
+    .navigation ul li{
+        margin: 12px;
+    }
+  }
 
-/* Add other styles as needed */
+
 /* homepage styles */
-#home,#projects,#about,#contact{
-    background-image: url('background-image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
 #home{
     margin: 0;
     padding: 0;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    text-align: center;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -104,6 +115,89 @@ section{
 #home p {
     font-size: 1.5rem;
 }
+.homepage{
+    /* border: 1px solid var(--border-color); */
+    padding: 1%;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    width: 80%;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.image {
+    border-radius: 8%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transform:rotate(7deg);
+}
+/* .info-container{
+    width: 62%;
+} */
+
+.message{
+    font-size: 50px;
+    color: var(--font-color);
+}
+.info{
+    font-size: 26px;
+    color: var(--font-color);
+}
+.button{
+    font-size: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2%;
+    text-decoration: none;
+    color: var(--font-color);
+    margin-right: 20px;
+}
+
+/* media queries for homepage */
+@media (max-width: 768px){
+    #home{
+        border: 2px solid black;
+    }
+    .homepage{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .image{
+        width: 150px;
+        height: 150px;
+        transform:rotate(0deg);
+    }
+    .info-container{
+        margin: 2%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .message{
+        font-size: 20px;
+    }
+    .info{
+        font-size: 18px;
+    }
+    .button{
+        font-size: 14px;
+        padding: 10px;
+        margin-right: 2px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+
+}
+
+
 /* projects styles */
 .title{        
     color: #fff;
