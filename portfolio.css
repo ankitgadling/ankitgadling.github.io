@@ -116,7 +116,6 @@ section{
     font-size: 1.5rem;
 }
 .homepage{
-    /* border: 1px solid var(--border-color); */
     padding: 1%;
     display: flex;
     gap: 80px;
@@ -137,9 +136,7 @@ section{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transform:rotate(7deg);
 }
-/* .info-container{
-    width: 62%;
-} */
+
 
 .message{
     font-size: 50px;
@@ -153,7 +150,7 @@ section{
     font-size: 20px;
     border: 1px solid var(--border-color);
     border-radius: 10px;
-    padding: 2%;
+    padding: 12px;
     text-decoration: none;
     color: var(--font-color);
     margin-right: 20px;
@@ -161,9 +158,9 @@ section{
 
 /* media queries for homepage */
 @media (max-width: 768px){
-    #home{
+    /* #home{
         border: 2px solid black;
-    }
+    } */
     .homepage{
         flex-direction: column;
         gap: 20px;
@@ -204,20 +201,74 @@ section{
     text-align: center;
     padding: 20px;
 }
-h1 {
-    font-size: 2.5rem;
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    width: 80%;
+    margin: auto;
+    color: var(--font-color);
 }
 
-.project {
-    margin: 0 10%;
+.project-box {
+    border: 1px solid #ccc;
     padding: 20px;
-    border-bottom: 1px solid #ddd;
 }
 
-.project h2 {
-    font-size: 1.5rem;
+.project-title {
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.project p {
-    font-size: 1rem;
+.project-description {
+    margin-top: 10px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.button-container {
+    margin-top: 10px;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+    .project-container {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .project-box {
+        padding: 15px;
+    }
+
+    .project-title {
+        font-size: 16px;
+    }
+}
+
+/* Media query for even smaller screens (e.g., very small devices) */
+@media screen and (max-width: 480px) {
+    .project-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .project-box {
+        padding: 10px;
+        border: none;
+    }
+
+    .project-title {
+        font-size: 14px;
+    }
+    .button{
+        font-size: 12px;
+    }
 }
