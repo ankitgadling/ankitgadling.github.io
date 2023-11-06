@@ -27,6 +27,12 @@ elements.forEach(function(element) {
     });
 });
 
+function getInTouch(){
+    contact=document.getElementById('contact');
+    home=document.getElementById('home');
+    home.style.left='-100%';
+    contact.style.left = '0';
+}
 
 function changeProject() {
     const projectContainer = document.querySelector('.project-container');

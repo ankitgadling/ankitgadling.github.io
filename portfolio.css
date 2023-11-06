@@ -361,6 +361,10 @@ button {
     /* background-color: red; */
     border: 1px solid var(--border-color);
 }
+.social a :hover{
+    animation: iconHover 0.5s; /* Use the iconHover keyframes animation with a 0.3s duration */
+    animation-fill-mode: forwards;
+}
 
 @media screen and (max-width: 768px) {
     .social svg{
