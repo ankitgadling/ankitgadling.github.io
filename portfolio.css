@@ -347,7 +347,27 @@ button {
     padding: 10px 20px;
     cursor: pointer;
 }
+.social{
+    text-align: center;
+    margin-top: 20px;
+}
+.social svg path{
+    stroke: #fff;
+}
+.social svg{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 25%;
+    /* background-color: red; */
+    border: 1px solid var(--border-color);
+}
 
-/* button:hover {
-    background-color: #555;
-} */
+@media screen and (max-width: 768px) {
+    .social svg{
+        margin: 4px;
+    }
+    h2{
+        font-size: 20px;
+    }
+}
+
