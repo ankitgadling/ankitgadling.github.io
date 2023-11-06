@@ -8,7 +8,7 @@ function setupPage() {
 // Call the setupPage function to run it when the page loads
 window.addEventListener('load', setupPage);
 
-const elements = document.querySelectorAll('li');
+const elements = document.querySelectorAll('.navigation li');
 elements.forEach(function(element) {
     element.addEventListener('click', function() {
         // Your click event handler code here
