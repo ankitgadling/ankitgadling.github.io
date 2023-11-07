@@ -16,6 +16,8 @@ body {
     height: 1px;
     background: linear-gradient(135deg, #3494E6, #EC6EAD);
   }
+
+  
   
 
 
@@ -159,6 +161,7 @@ section{
     color: var(--font-color);
 }
 .button{
+    background-color: transparent;
     font-size: 20px;
     border: 1px solid var(--border-color);
     border-radius: 10px;
@@ -166,7 +169,12 @@ section{
     text-decoration: none;
     color: var(--font-color);
     margin-right: 20px;
+    cursor: pointer;
 }
+
+
+
+
 
 /* media queries for homepage */
 @media (max-width: 768px){
@@ -339,14 +347,15 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 3px;
 }
-button {
+/* button {
     background-color: transparent;
     color: #fff;
     border: 1px solid var(--border-color);
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-}
+} */
+
 .social{
     text-align: center;
     margin-top: 20px;
