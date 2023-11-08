@@ -122,7 +122,8 @@
         <section id="contact">
             <div class="contact-container">
                 <h2>Send me a message</h2>
-                <form action="" method="post">
+                <form action="https://api.web3forms.com/submit" method="post">
+                    <input type="hidden" name="access_key" value="6ae8bcaf-8b40-47a8-a65a-8f1b97257a7d">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
 
@@ -131,7 +132,7 @@
 
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
-
+                    <input type="hidden" name="redirect" value="http://127.0.0.1:5500/thanks.html">
                     <button class="button" type="submit">Send Message</button>
                 </form>
                 <div class="social">
