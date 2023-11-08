@@ -239,6 +239,8 @@ section{
 .project-title {
     font-size: 18px;
     font-weight: bold;
+    border-bottom: 1px solid var(--border-color);
+    display: inline-block;
 }
 
 .project-description {
@@ -370,9 +372,17 @@ textarea {
     /* background-color: red; */
     border: 1px solid var(--border-color);
 }
+.social a{
+    text-decoration: none;
+}
 .social a :hover{
     animation: iconHover 0.5s; /* Use the iconHover keyframes animation with a 0.3s duration */
     animation-fill-mode: forwards;
+}
+#result{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
