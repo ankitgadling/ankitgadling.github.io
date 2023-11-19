@@ -101,3 +101,16 @@ function changeProject() {
           }, 5000);
         });
     });
+
+function darkmode(){
+    const mode=document.getElementById("darkmode").innerHTML;
+    if (mode==='dark_mode') {
+      document.getElementById("darkmode").innerHTML="light_mode";
+      document.body.style.background = "linear-gradient(135deg, #3494E6, #EC6EAD)";
+    } else {
+      document.getElementById("darkmode").innerHTML="dark_mode";
+      document.body.style.background = "linear-gradient(135deg, #1F1C2C, #6D435A)";
+      // document.getElementById("navigation").style.background="linear-gradient(135deg, #1F1C2C, #6D435A)";
+
+    }
+}
