@@ -18,10 +18,9 @@ body {
     background: linear-gradient(135deg, #3494E6, #EC6EAD);
 }
 
-  
-  
-
-
+html::-webkit-scrollbar {
+    width: 0px;
+  }
 /* icons styles */
 .material-symbols-outlined {
   font-variation-settings:
