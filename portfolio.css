@@ -62,12 +62,14 @@ section{
     position: absolute;
     left: -100%;
 }
+
 .dark_mode_toggle{
 position: fixed;
 right: 4%;
 bottom: 4%;
 z-index: 1;
 cursor: pointer;
+height: fit-content;
 }
 
 
